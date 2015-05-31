@@ -39,7 +39,7 @@ return [
 	|
 	*/
 
-	'timezone' => 'UTC',
+	'timezone' => 'Asia/Tokyo',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
 	|
 	*/
 
-	'locale' => 'en',
+	'locale' => 'ja',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -137,6 +137,13 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 
 		/*
+		 * 3rd party Service Providers...
+		 */
+		'Illuminate\Html\HtmlServiceProvider',
+		'Laravel\Socialite\SocialiteServiceProvider',
+		'LaravelPlus\Extension\ServiceProvider',
+
+		/*
 		 * Application Service Providers...
 		 */
 		'App\Providers\AppServiceProvider',
@@ -144,6 +151,7 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'App\Providers\SqliteServiceProvider',
 
 	],
 
@@ -192,6 +200,12 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+
+		'Html'      => 'Illuminate\Html\HtmlFacade',
+		'Form'      => 'Illuminate\Html\FormFacade',
+		'Socialite' => 'Laravel\Socialite\Facades\Socialite',
+		'InputModel' => 'LaravelPlus\Extension\Specs\InputModel',
+		'FormModel' => 'LaravelPlus\Extension\Specs\FormModel',
 
 	],
 
