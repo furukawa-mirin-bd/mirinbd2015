@@ -1,0 +1,166 @@
+@charset "utf-8" ;
+@import url("html5reset.css") !important;
+
+
+/*body部分----------------------------------------------------------*/
+body {
+	position: relative ;
+	height: 100% ;
+	width: 100% ;
+	font-family: Helvetica;
+	margin: 0;
+	padding: 0;
+	-webkit-user-select: none;
+	background: url(../img/bg.gif) repeat;
+}
+
+#sb-site {
+	background: url(../img/bg.gif) repeat;
+}
+
+a {
+	color : white ;
+	text-decoration: none;
+}
+
+ul li{
+	list-style: none ;
+}
+
+/*ヘッダー----------------------------------------------------------*/
+header {
+	width: 90% ;
+	margin: 0 auto ;
+	margin-top: 15px ;
+}
+
+.sb-toggle-right {
+	float: right ;
+}
+
+/*コンテンツ----------------------------------------------------------*/
+#mirin {
+	z-index: -20 ;
+	position: absolute ;
+	right: 5px ;
+}
+
+#content {
+	width: 90% ;
+	margin: 0 auto ;
+	margin-bottom: 20px ;
+}
+
+.left {
+	float : left ;
+	width : 48% ;
+}
+
+.right {
+	float : right ;
+	width : 48% ;	
+}
+
+.menubtn {
+	position: relative ;
+	height : 180px ;
+	background-color: rgba( 0, 0, 0, 0.65 );
+	margin-top : 15px ;
+	text-align: center ;
+}
+
+.menubtn a{
+	display: block;
+	position: absolute ;
+	line-height: 180px ;
+	top:0;
+	left:0;
+	width: 100% ;
+	height: 100% ;
+}
+
+.midashi {
+	margin: 0 auto ;
+	margin-top: 10px ;
+	height: 40px ;
+	width: 100% ;
+	font-size: 80% ;
+	background-color: rgba( 0, 0, 0, 0.65 ); 
+}
+
+.midashi h3{
+	margin-left: 20px ;
+	color : red ;
+	line-height: 40px ;
+}
+	
+#gallery {
+	text-align: center ;
+	margin : 0 auto ;
+	margin-top: 20px ;
+}
+
+.swiper-container, .swiper-slide {
+	width: 100%;
+	margin : 0 auto ;
+	margin-top : 20px ;
+}
+
+.btn1 {
+font-size : 1em ;
+display: block;
+line-height : 50px ;
+text-align : center ;
+width : 70% ;
+margin: 0 auto;
+margin-top : 20px ;
+background : #ff1414 ;
+border-radius:5px;
+box-shadow:0 5px #a30d0d;
+color : #fff ;
+font-weight: bold ;
+}
+
+.btn1 a{
+	display: block;
+	height: 100% ;
+	width: 100%;
+}
+
+.massage {
+	margin-top: 20px ;
+}
+
+textarea {
+    min-width: 70%;
+    min-height: 80px;
+    max-width:  70%;
+    max-height: 200px;
+    font-size : 15px ;
+}
+
+.username {
+	margin-top: 15px ;
+	width : 50% ;
+	height : 30px ;
+	font-size : 20px ;
+}
+
+/*ドロワー----------------------------------------------------------*/
+.topnav {
+	padding-left : 50px ;
+}
+
+
+.sidenav {
+	margin-top : 0 ;
+	margin-left: -50px ;
+	text-align: center ;
+}
+
+.sidenav li{
+	height : 50px ;
+	font-weight: bold ;
+	line-height: 50px ;
+	border-bottom: #2e2e2e solid 2px ;
+}

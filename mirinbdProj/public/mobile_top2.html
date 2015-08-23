@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0" >
+<title>MirinMania2015</title>
+<link rel="stylesheet" href="./css/mobile2.css"/>
+<link rel="stylesheet" href="./css/swiper2.css"/>
+<link rel="stylesheet" href="./css/slidebars.css"/>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js/swiper.js"></script>
+<script type="text/javascript" src="./js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+window.onload = function() {
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination',
+        //Your options here:
+        mode:'horizontal',
+        loop: true,
+        paginationClickable: true
+        //etc..
+    });  
+}
+</script>
+	<div id="sb-site">
+		<header>
+			<a href="./mobile_top.html"><img id="rogo" src="./img/toplogo.png" width="70%"></a>
+			<div class="sb-toggle-right"><i class="fa fa-bars" style="font-size:200%; color:white;"></i></div>
+		</header>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><a href="./mobile-card01.html"><img style="width:70%;" src="./img/contents01.png"></a></div>
+				<div class="swiper-slide"><img style="width:70%;" src="./img/contents02.png"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<ul class="topnav">
+			<li><a href="./mobile_top.html">Interview</a></li>
+			<li><a href="./mobile-card01.html">MessageCard</a></li>
+		</ul>
+	</div>
+	<div class="sb-slidebar sb-right sb-style-push">
+		<nav>
+			<ul class="sidenav">
+				<li class="topnav" style="background-color:red ;width:100% ;"><a href="#">Home</a></li>
+				<li><a href="./mobile-card01.html">メッセージカード</a></li>
+				<li><a href="#">コンテンツ2</a></li>
+				<li><a href="#">コンテンツ3</a></li>
+				<li><a href="#">コンテンツ4</a></li>
+			</ul>
+		</nav>  
+	</div>
+</body>

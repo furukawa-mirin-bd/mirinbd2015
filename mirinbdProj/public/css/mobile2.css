@@ -1,0 +1,86 @@
+@charset "utf-8" ;
+@import url("html5reset.css") !important;
+
+
+/*body部分----------------------------------------------------------*/
+body {
+}
+
+a {
+	color : white ;
+	text-decoration: none;
+}
+
+ul li{
+	list-style: none ;
+}
+
+#sb-site {
+    z-index                 : -1;
+    background-image        : url('../img/winback.jpg');
+    background-repeat       : no-repeat;
+    background-size         : cover;
+    position                : fixed;
+    top                     : 0;
+    left                    : 0;
+    right                   : 0;
+    bottom                  : 0;
+}
+
+/*ヘッダー----------------------------------------------------------*/
+header {
+	width: 90% ;
+	margin: 0 auto ;
+	margin-top: 15px ;
+}
+
+.sb-toggle-right {
+	float: right ;
+	margin-top: 10px ;
+}
+
+.swiper-wrapper {
+	text-align: center ;
+}
+
+.swiper-pagination {
+	margin-top : 150px ;
+}
+
+/*トップ----------------------------------------------------------*/
+
+.topnav {
+	margin-left : 0px ;
+}
+
+.topnav li{
+	text-align: center ;
+	height : 30px ;
+	width : 95% ;
+	background-color: rgba(0, 0, 0, 0.5); 
+	margin-bottom : 10px ;
+	border: 1px solid #ff0000;
+	padding: 5px 0 0 0 ;
+}
+
+.topnav li a{
+	font-weight: 700 ;
+}
+
+/*ドロワー----------------------------------------------------------*/
+.topnav {
+	padding-left : 20px ;
+}
+
+.sidenav {
+	margin-top : 0 ;
+	margin-left: -50px ;
+	text-align: center ;
+}
+
+.sidenav li{
+	height : 50px ;
+	font-weight: bold ;
+	line-height: 50px ;
+	border-bottom: #2e2e2e solid 2px ;
+}

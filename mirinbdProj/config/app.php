@@ -152,6 +152,7 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 		'App\Providers\SqliteServiceProvider',
+		'TwigBridge\ServiceProvider',
 
 	],
 
@@ -206,6 +207,7 @@ return [
 		'Socialite' => 'Laravel\Socialite\Facades\Socialite',
 		'InputModel' => 'LaravelPlus\Extension\Specs\InputModel',
 		'FormModel' => 'LaravelPlus\Extension\Specs\FormModel',
+		'Twig'		=> 'TwigBridge\Facade\Twig',
 
 	],
 
