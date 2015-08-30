@@ -12,3 +12,10 @@
 */
 
 Route::get('/', 'IndexController@index');
+
+// メッセージ投稿関連
+Route::get('/message/images', 'MessageController@index');
+
+Route::get('/message/image', 'MessageController@getImage');
+
+Route::post('/message', 'MessageController@postMessage');

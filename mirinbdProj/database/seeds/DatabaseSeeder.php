@@ -14,7 +14,22 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		// $this->call('UserTableSeeder');
+		$this->call('MsimagesTableSeeder');
 	}
 
+}
+
+class MsimagesTableSeeder extends Seeder
+{
+    public function run()
+    {
+        DB::table('msimages')->delete();
+ 
+        DB::table('msimages')->insert([
+          ['url' => './img/samplecard01.png'],
+          ['url' => './img/samplecard01_2.png'],
+          ['url' => './img/samplecard01_3.png']
+        ]);
+    }
+ 
 }
