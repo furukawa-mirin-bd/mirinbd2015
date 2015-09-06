@@ -759,7 +759,7 @@
                     "name": "Jeremy Lindblom",
                     "email": "jeremeamia@gmail.com",
                     "homepage": "https://github.com/jeremeamia",
-                    "role": "Developer"
+                    "role": "developer"
                 }
             ],
             "description": "Serialize Closure objects, including their context and binding",
@@ -777,16 +777,16 @@
         },
         {
             "name": "laravel-plus/extension",
-            "version": "v2.0.4",
+            "version": "v2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jumilla/laravel-extension.git",
-                "reference": "b62025baaa2a114e203d4c77c0cdeb271dc6988c"
+                "reference": "67626182a231860fbee3d1a57bf44c729fb60def"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jumilla/laravel-extension/zipball/b62025baaa2a114e203d4c77c0cdeb271dc6988c",
-                "reference": "b62025baaa2a114e203d4c77c0cdeb271dc6988c",
+                "url": "https://api.github.com/repos/jumilla/laravel-extension/zipball/67626182a231860fbee3d1a57bf44c729fb60def",
+                "reference": "67626182a231860fbee3d1a57bf44c729fb60def",
                 "shasum": ""
             },
             "require": {
@@ -794,6 +794,9 @@
                 "php": ">=5.5.0"
             },
             "type": "framework-extension",
+            "extra": {
+                "branch-alias": []
+            },
             "autoload": {
                 "psr-4": {
                     "LaravelPlus\\Extension\\": "src/"
@@ -821,7 +824,7 @@
                 "laravel",
                 "laravel4"
             ],
-            "time": "2015-05-24 07:47:54"
+            "time": "2015-03-08 08:45:21"
         },
         {
             "name": "laravel/framework",
