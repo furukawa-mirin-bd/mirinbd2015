@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0" >
+<meta name="csrf-token" content="{{ csrf_token() }}" />
 <title>MirinMania2015:MassageCard</title>
 <link rel="stylesheet" href="./css/mobile.css"/>
 <link rel="stylesheet" href="./css/swiper.css"/>
@@ -11,13 +12,11 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="./js/swiper.js"></script>
 <script type="text/javascript" src="./js/slidebars.js"></script>
-<script type="text/javascript" src="./js/message_post.js"></script>
 
 <script>
   (function($) {
     $(document).ready(function() {
       $.slidebars();
-      getSelectImage();
     });
   }) (jQuery);
 </script>
@@ -31,25 +30,7 @@
 		<div class="sb-toggle-right"><i class="fa fa-bars" style="font-size:200%; color:white;"></i></div>
 	</header>
 	<div id="content">
-		<div class="midashi"><h3>カードに記入するメッセージを決定します。</h3></div>
-		<div id="gallery">
-			<div class="gallery-cell"></div>
-		</div>
-		<div class="input">
-			<div class="midashi"><h3>メッセージを入力してください。</h3></div>
-			<form>
-				<textarea type="text" id="messageBody"></textarea>
-			</form>
-		</div>
-		<div class="input">
-			<div class="midashi"><h3>名前を入力してください。</h3></div>
-			<form>
-				<input type="text" id="name">
-			</form>
-		</div>
-		<div class="btn1">
-			<a href='javascript:void(0)' onclick="selectNameAndMessage('./mobile-card03.html')">このメッセージにする</a>
-		</div>
+		<div class="midashi"><h3>メッセージを登録しました。</h3></div>
 	</div>
 	</div>
 	<div class="sb-slidebar sb-right sb-style-push">
