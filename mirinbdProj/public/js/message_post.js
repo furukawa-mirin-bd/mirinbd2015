@@ -108,7 +108,6 @@ var sendMessage = function() {
         // 通信成功時の処理
         success: function(result, dataType) {
             // サンクスページへの遷移
-            alert("SUCCESS!");
             location.href = "./mobile-card-result.html";
         },
         // 通信失敗時の処理
