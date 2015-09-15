@@ -20,7 +20,7 @@ var swiperImageSet = function() {
             // 取得したパラメータに従い画像を表示する
             // 後でIDをDBへ格納する必要があるため、IDもDOMに持たせる
             for (var i = 0; i <= images.length - 1; i++) {
-            	$(".swiper-wrapper").append('<div class="swiper-slide"><img style="width:100%;" src="' + images[i].url + '"><input type="hidden" name="messageImage" class="messageImage" value="' + images[i].msimage_id + '"></div>');
+            	$(".swiper-wrapper").append('<div class="swiper-slide"><img style="width:70%;" src="' + images[i].url + '"><input type="hidden" name="messageImage" class="messageImage" value="' + images[i].msimage_id + '"></div>');
             	swiperInitialize();
             };
         },
@@ -108,7 +108,7 @@ var sendMessage = function() {
         // 通信成功時の処理
         success: function(result, dataType) {
             // サンクスページへの遷移
-            location.href = "./mobile-card-result.html";
+            location.href = "./card_result.html";
         },
         // 通信失敗時の処理
         error: function(xhr, textStatus, error) {
@@ -183,7 +183,7 @@ var getMsimage = function(msimage_id) {
         // 通信成功時の処理
         success: function(image, dataType) {
             // 取得したパラメータに従い画像を表示する
-           	$(".gallery-cell").append('<img style="width:100%;" src="' + image.url + '">');
+           	$(".gallery-cell").append('<img style="width:70%;" src="' + image.url + '">');
         },
         // 通信失敗時の処理
         error: function(xhr, textStatus, error) {

@@ -11,6 +11,17 @@
 <link href='https://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="./js/swiper.js"></script>
+<script type="text/javascript" src="./js/slidebars.js"></script>
+<script type="text/javascript" src="./js/message_post.js"></script>
+
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+      swiperImageSet();
+    });
+  }) (jQuery);
+</script>
 </head>
 
 <body>
@@ -28,7 +39,7 @@
 		}
 	</script>
 	<header>
-		<a href="./index.html"><img id="logo_content" src="./img/toplogo.png" width="170px"></a>
+		<a href="/"><img id="logo_content" src="./img/toplogo.png" width="170px"></a>
 	</header>
 	<div id="wrap">
 		<div class="content_header">
@@ -38,14 +49,11 @@
 		<!-- swiper -->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"><a href="#"><img style="width:90%;" src="./img/samplecard01.png"></a></div>
-				<div class="swiper-slide"><a href="#"><img style="width:90%;" src="./img/samplecard01_2.png"></a></div>
-				<div class="swiper-slide"><a href="#"><img style="width:90%;" src="./img/samplecard01_3.png"></a></div>
 			</div>
 			<div class="swiper-button-next swiper-button-black"></div>
 			<div class="swiper-button-prev swiper-button-black"></div>
 			<div class="swiper-pagination"></div>
 		</div>
-		<div class="btn"><a href="./card02.html">このデザインにする</a></div>
+		<div class="btn"><a href='javascript:void(0)' onclick="selectImage('./card02.html')">このデザインにする</a></div>
 	</div>
 </body>
