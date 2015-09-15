@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,maximum-scale=1" >
+<title>MirinMania15:MessageCard</title>
+<link rel="stylesheet" media="(max-width: 780px)" href="./css/smartphone_content.css">
+<link rel="stylesheet" media="(min-width: 781px)" href="./css/pc_content.css">
+<link rel="stylesheet" href="./css/swiper2.css"/>
+<link href='http://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="./js/swiper.js"></script>
+<script type="text/javascript" src="./js/slidebars.js"></script>
+<script type="text/javascript" src="./js/message_post.js"></script>
+
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+      getSelectImage();
+    });
+  }) (jQuery);
+</script>
+</head>
+
+<body>
+	<header>
+		<a href="./index.html"><img id="logo_content" src="./img/toplogo.png" width="170px"></a>
+	</header>
+	<div id="wrap">
+		<div class="content_header">
+			<h2 class="content_name">INPUT MESSEGE </h2>
+			<p class="content_cap">カードに入れるメッセージを入力してください。</p>
+		</div>
+		<div id="gallery">
+			<div class="gallery-cell"><img style="width:70%;" src="./img/samplecard01.png"></div>
+			<table class="table" width="70%" cellspacing="0" cellpadding="2px">
+				<tr><td align="left" nowrap>ここにメッセージ入る。</td></tr>
+				<tr><td align="left" nowrap>ここにメッセージ入る。</td></tr>
+			</table>
+			<table class="name_table" width="70%" cellspacing="0" cellpadding="2px">
+				<tr><td align="left" nowrap>ここに名前入る</td></tr>
+			</table>
+		</div>
+		<div class="input">
+			<div class="midashi"><h3>メッセージを入力してください。</h3></div>
+			<form>
+				<textarea type="text" class="massage"></textarea>
+			</form>
+		</div>
+		<div class="input">
+			<div class="midashi"><h3>名前を入力してください。</h3></div>
+			<form>
+				<input type="text" class="username">
+			</form>
+		</div>
+		<div class="btn"><a href="./card03.html">このメッセージにする</a></div>
+	</div>
+</body>
