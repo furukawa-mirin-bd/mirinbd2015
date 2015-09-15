@@ -14,8 +14,8 @@ class IndexController extends Controller {
 	 */
 	public function index()
 	{
-		//
-		return view("index");
+		// 誕生日でなければカウントダウンページを表示する(後で処理分けるけど一旦固定してしまう)
+		return view("count");
 	}
 
 	/**
