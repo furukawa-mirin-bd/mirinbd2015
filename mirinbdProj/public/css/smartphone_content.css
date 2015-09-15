@@ -29,6 +29,10 @@ body {
 
 /*header----------------------------------------------------------*/
 header {
+	z-index: 9999;
+	position: fixed;
+	top:0px;
+	left:0px;
 	text-align: center ;
 	width: 100% ;
 	margin: 0 auto ;
@@ -61,7 +65,7 @@ header {
 	font-family: 'Changa One', cursive;
 	color: white ;
 	font-size: 180% ;
-	margin-top: 10px ;
+	margin-top: 50px ;
 	text-shadow: 2px 2px 3px #000;
 }
 
