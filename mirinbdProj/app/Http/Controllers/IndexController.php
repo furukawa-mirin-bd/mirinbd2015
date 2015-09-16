@@ -14,8 +14,17 @@ class IndexController extends Controller {
 	 */
 	public function index()
 	{
-		// 誕生日でなければカウントダウンページを表示する(後で処理分けるけど一旦固定してしまう)
-		return view("count");
+		date_default_timezone_set('Asia/Tokyo');
+		$today = date("Y/m/d H:i");
+		$target_day = "2015/09/19 23:58";
+
+		if(strtotime($today) > strtotime($target_day)){
+			// 誕生日であればトップページを返す
+			return view("index");;
+		}else{
+			// 誕生日でなければカウントダウンページを返す
+			return view("count");
+		}		
 	}
 
 	/**

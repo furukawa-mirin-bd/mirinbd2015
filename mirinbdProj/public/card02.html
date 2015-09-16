@@ -10,6 +10,7 @@
 <link href='http://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
 <script type="text/javascript" src="./js/swiper.js"></script>
 <script type="text/javascript" src="./js/slidebars.js"></script>
 <script type="text/javascript" src="./js/message_post.js"></script>
@@ -19,6 +20,7 @@
     $(document).ready(function() {
       $.slidebars();
       getSelectImage();
+      messageValidate();
     });
   }) (jQuery);
 </script>
@@ -38,16 +40,15 @@
 		</div>
 		<div class="input">
 			<div class="midashi"><h3>メッセージを入力してください。</h3></div>
-			<form>
-				<textarea type="text" class="massage" id="messageBody"></textarea>
-			</form>
+			<form id="messageInput">
+				<textarea type="text" class="massage" id="messageBody" name="messageBody"></textarea>
 		</div>
 		<div class="input">
 			<div class="midashi"><h3>名前を入力してください。</h3></div>
-			<form>
-				<input type="text" class="username" id="name">
+			<input type="text" class="username" id="name" name="postname">
 			</form>
 		</div>
+		<div class="input" id="errorList"></div>
 		<div class="btn"><a href='javascript:void(0)' onclick="selectNameAndMessage('./card03.html')">このメッセージにする</a></div>
 	</div>
 </body>

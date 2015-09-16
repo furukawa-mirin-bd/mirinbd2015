@@ -55,22 +55,29 @@ var swiperInitialize = function() {
 var selectImage = function(linkUrl) {
 	// Activeな画像を取得
 	var activeImageId = $('.swiper-slide-active').children('input').val();
+	var param = "msimage_id=" + activeImageId;
 	// URLの末尾に選択した画像のパラメータを付与してリンク遷移
-	location.href = linkUrl + "?msimage_id=" + activeImageId;
+	location.href = linkUrl + "?" + encodeURIComponent(param);
 };
 
 /*
  URLにメッセージ内容を付与する
 */
 var selectNameAndMessage = function(linkUrl) {
-	// 既存のクエリ文字列を取得する
-	var query = document.location.search;
-	// 名前を取得する
-	var messageBody = $('#messageBody').val();
-	// メッセージ内容を取得する
-	var name = $('#name').val();
-	// URLの末尾に選択した画像のパラメータを付与してリンク遷移
-	location.href = linkUrl + query + "&message_body=" + messageBody + "&name=" + name;
+
+	if($("#messageInput").valid()) {
+		// 既存のクエリ文字列を取得する
+		var query = document.location.search.substring(1);
+		// 名前を取得する
+		var messageBody = $('#messageBody').val();
+		// メッセージ内容を取得する
+		var name = $('#name').val();
+
+		// 名前とメッセージ内容を結合する
+		var param = decodeURIComponent(query) + "&message_body=" + messageBody + "&name=" + name;
+		// URLの末尾に選択した画像のパラメータを付与してリンク遷移
+		location.href = linkUrl + "?" + encodeURIComponent(param);		
+	}
 };
 
 /*
@@ -128,6 +135,38 @@ var sendMessage = function() {
 /*
  メッセージ入力内容に関するバリデーション処理
 */
+var messageValidate = function() {
+	$("#messageInput").validate({
+		rules : {
+			postname : {
+				required: true,
+      			minlength: 1,
+      			maxlength: 30
+			},
+			messageBody : {
+				required: true,
+      			minlength: 1,
+      			maxlength: 150
+			}
+		},
+		messages : {
+			postname : {
+				required: "名前が空白での投稿はできません。",
+      			minlength: "名前が空白での投稿はできません。",
+      			maxlength: "名前は30文字以内で入力してください。"
+			},
+			messageBody : {
+				required: "メッセージ内容が空白での投稿はできません。",
+				minlength: "メッセージ内容が空白での投稿はできません。",
+      			maxlength: "メッセージは150文字以内で入力してください。"
+			}
+		},
+		errorClass: "msgError",
+        errorLabelContainer: "#errorList",
+        wrapper: "li",
+        onfocusout: false
+	});
+}
 
 
 /*---------------------------------------/
@@ -142,7 +181,7 @@ var sendMessage = function() {
 var getQueryString = function() {
     if (1 < document.location.search.length) {
         // 最初の1文字 (?記号) を除いた文字列を取得する
-        var query = document.location.search.substring(1);
+        var query = decodeURIComponent(document.location.search).substring(1);
  
         // クエリの区切り記号 (&) で文字列を配列に分割する
         var parameters = query.split('&');
@@ -193,3 +232,14 @@ var getMsimage = function(msimage_id) {
     });
 };
 
+/*
+ HTMLのエスケープ処理
+*/
+function escapeHtml(str) {
+    str = str.replace(/&/g, '&amp;');
+    str = str.replace(/</g, '&lt;');
+    str = str.replace(/>/g, '&gt;');
+    str = str.replace(/"/g, '&quot;');
+    str = str.replace(/'/g, '&#39;');
+    return str;
+}
