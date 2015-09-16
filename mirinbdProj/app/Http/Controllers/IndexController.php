@@ -16,7 +16,7 @@ class IndexController extends Controller {
 	{
 		date_default_timezone_set('Asia/Tokyo');
 		$today = date("Y/m/d H:i");
-		$target_day = "2015/09/19 23:58";
+		$target_day = "2015/09/15 23:58";
 
 		if(strtotime($today) > strtotime($target_day)){
 			// 誕生日であればトップページを返す
