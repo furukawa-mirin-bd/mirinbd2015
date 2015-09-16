@@ -264,3 +264,45 @@ font-weight: bold ;
 	height: 100% ;
 	width: 100%;
 }
+
+/*secret------------------------------------*/
+
+#miri01 {
+	margin: 0 auto ;
+	text-align: center;
+	width:50%;
+	height :200px ;
+	background:url('../img/secret01.jpg') ;
+	background-size : 100% ;
+	background-repeat: no-repeat ;
+}
+
+#miri02 {
+	margin: 0 auto ;
+	text-align: center;
+	width:50%;
+	height :200px ;
+	background:url('../img/secret02.jpg') ;
+	background-size : 100% ;
+	background-repeat: no-repeat ;
+}
+
+#miri03 {
+	margin: 0 auto ;
+	text-align: center;
+	width:50%;
+	height :200px ;
+	background:url('../img/secret03.jpg') ;
+	background-size : 100% ;
+	background-repeat: no-repeat ;
+}
+
+#miri04 {
+	margin: 0 auto ;
+	text-align: center;
+	width:50%;
+	height :200px ;
+	background:url('../img/secret04.jpg') ;
+	background-size : 100% ;
+	background-repeat: no-repeat ;
+}
