@@ -7,16 +7,6 @@
 <link rel="stylesheet" media="(max-width: 780px)" href="./css/smartphone_count.css">
 <link rel="stylesheet" media="(min-width: 781px)" href="./css/pc_count.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="./js/jquery.countdown.pack.js"></script>
-
-<script type="text/javascript">
-	$(function () {	
-		// 例：2013年9月28日
-		// "-1"は気にしなくてOK
-		$('#countdown').countdown({until: new Date(2015, 9 - 1, 19)}); 
-	});
-</script>
-
 </head>
 
 <body>
@@ -53,7 +43,8 @@
 								this.elem.innerHTML = timer;
 								tid = setTimeout( function(){me.countDown();},10 );
 								}else{
-									this.elem.innerHTML = this.mes;
+									this.elem.innerHTML = '<a href="/">' + this.mes + '</a>';
+									window.location.href = '/';
 									return;
 									}
 									},addZero:function(num){ return ('0'+num).slice(-2); }
