@@ -23,6 +23,7 @@ body {
 	background-size : 25% auto,25% auto,100%;
 	background-repeat: no-repeat,no-repeat,repeat ;
 	background-attachment: fixed ;
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 
 /*header----------------------------------------------------------*/
@@ -119,6 +120,8 @@ header {
 	color: white ;
 	font-size : 80% ;
 	text-shadow: 2px 2px 3px #000, 0 0 2px #ff0000;
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	font-weight: bold ;
 }
 
 /*MessegeCard------------------------------------*/
