@@ -20,7 +20,7 @@ var swiperImageSet = function() {
             // 取得したパラメータに従い画像を表示する
             // 後でIDをDBへ格納する必要があるため、IDもDOMに持たせる
             for (var i = 0; i <= images.length - 1; i++) {
-            	$(".swiper-wrapper").append('<div class="swiper-slide"><img style="width:70%;" src="' + images[i].url + '"><input type="hidden" name="messageImage" class="messageImage" value="' + images[i].msimage_id + '"></div>');
+            	$(".swiper-wrapper").append('<div class="swiper-slide"><img style="width:90%;" src="' + images[i].url + '"><input type="hidden" name="messageImage" class="messageImage" value="' + images[i].msimage_id + '"></div>');
             };
             swiperInitialize();
         },
