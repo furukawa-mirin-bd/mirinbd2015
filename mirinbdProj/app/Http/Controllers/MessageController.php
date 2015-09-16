@@ -54,8 +54,6 @@ class MessageController extends Controller {
 	{
 		$messageData = Input::All();
 
-		Log::debug($messageData);
-
 		$message = new Message;
 
 		$message->name = $messageData["name"];
