@@ -10,7 +10,8 @@
 		"illuminate/html": "~5.0",
 		"laravel-plus/extension": "~2.0",
 		"barryvdh/laravel-debugbar": "~2.0",
-		"rcrowe/twigbridge": "0.8.*"
+		"rcrowe/twigbridge": "0.8.*",
+		"doctrine/dbal": "2.*"
 	},
 	"require-dev": {
 		"laracasts/generators": "~1.1",
