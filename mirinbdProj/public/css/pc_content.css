@@ -337,13 +337,32 @@ font-weight: bold ;
 
 /*btn------------------------------------*/
 .btn {
+clear: both ;
 font-size : 1em ;
+display: block;
 line-height : 50px ;
 text-align : center ;
 width : 70% ;
 margin: 0 auto;
 margin-top : 80px ;
-margin-bottom: 40px ;
+margin-bottom: 10px ;
+background : #ff1414 ;
+border-radius:5px;
+box-shadow:0 5px #a30d0d;
+color : #fff ;
+font-weight: bold ;
+}
+
+.btn1 {
+clear: both ;
+font-size : 1em ;
+display: block;
+line-height : 50px ;
+text-align : center ;
+width : 70% ;
+margin: 0 auto;
+margin-top : 40px ;
+margin-bottom: 50px ;
 background : #ff1414 ;
 border-radius:5px;
 box-shadow:0 5px #a30d0d;
@@ -356,6 +375,14 @@ font-weight: bold ;
 	height: 100% ;
 	width: 100%;
 }
+
+.chuui {
+	margin: 0 auto ;
+	width : 70% ;
+	color : white ;
+	font-size : 80% ;
+	line-height: 15px ;
+	}
 
 .hbtn {
 	margin-top : 80px ;
