@@ -327,8 +327,8 @@ line-height : 50px ;
 text-align : center ;
 width : 70% ;
 margin: 0 auto;
-margin-top : 80px ;
-margin-bottom: 10px ;
+margin-top : 20px ;
+margin-bottom: 20px ;
 background : #ff1414 ;
 border-radius:5px;
 box-shadow:0 5px #a30d0d;
@@ -418,6 +418,10 @@ font-weight: bold ;
 	font-size : 50% ;
 	line-height: 15px ;
 	}
+	
+.hbtn {
+	margin-top : 80px ;
+}
 
 /*secret------------------------------------*/
 
