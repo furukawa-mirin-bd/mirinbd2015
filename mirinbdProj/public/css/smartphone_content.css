@@ -93,6 +93,16 @@ header {
 	line-height: 10px ;
 }
 
+.midashi02 {
+	color: white ;
+	font-weight: bold ;
+	text-shadow: 2px 2px 3px #000, 0 0 2px #ff0000;
+	font-size: 60% ;
+	line-height: 0 ;
+	margin-top: 10px ;
+	margin-bottom: 10px ;
+}
+
 .midashi-y {
 	color: #fbff00 ;
 	font-weight: bold ;
