@@ -136,6 +136,10 @@ header {
 	margin-top: 20px ;
 }
 
+.table,.name_table,.table02,.name_table02,.table03,.name_table03 {
+	font-weight: bold ;
+	} 
+
 .table {
 	position: absolute ;
 	width: 60% ;
