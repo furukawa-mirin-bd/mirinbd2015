@@ -150,12 +150,12 @@ var messageValidate = function() {
 			postname : {
 				required: true,
       			minlength: 1,
-      			maxlength: 20
+      			maxlength: 10
 			},
 			messageBody : {
 				required: true,
       			minlength: 1,
-      			maxlength: 150
+      			maxlength: 108
 			},
 			twitterid : {
 				required: false,
