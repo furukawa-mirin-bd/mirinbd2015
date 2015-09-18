@@ -357,3 +357,21 @@ font-weight: bold ;
 	background-size : 100% ;
 	background-repeat: no-repeat ;
 }
+
+/*comingsoon------------------------------------*/
+#yado {
+	margin : 0 auto ;
+	text-align: center ;
+	position: relative ;
+}
+
+.coming {
+	width: 100% ;
+	position: absolute ;
+	z-index: 9998 ;
+	top : 13% ;
+	left : 5% ;
+	font-size: 150% ;
+	font-weight: bold ;
+	line-height: 10px ;
+}
