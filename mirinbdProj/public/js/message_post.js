@@ -95,7 +95,13 @@ var getSelectImage = function() {
 	var msimage = getMsimage(queryStrings['msimage_id']);
 
 	// message_bodyがあれば本文を表示する
+	if(queryStrings['message_body']) {
+		$("#messagePrev").append(queryStrings['message_body']);
+	}
 	// nameがあれば名前を表示する
+	if(queryStrings['name']) {
+		$("#namePrev").append(queryStrings['name']);
+	}
 };
 
 /*
@@ -232,7 +238,18 @@ var getMsimage = function(msimage_id) {
         // 通信成功時の処理
         success: function(image, dataType) {
             // 取得したパラメータに従い画像を表示する
-           	$(".gallery-cell").append('<img style="width:90%;" src="' + image.url + '"><table class="table' + image.html_layout +' fit' + '"><script>jQuery(".fit").fitText(1.9);</script><tr><td>テストテストテストテストテテストテストテストテストてすとてすとてすとてすとてすとてすとてすとてすとストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステ</td></tr></table><table class="name_table' + image.html_layout +' fit2' + '"><script>jQuery(".fit2").fitText(1.2);</script><tr><td>名前入ります。名前入</td></tr></table>');
+           	$(".gallery-cell").append('<img style="width:90%;" src="' + image.url + '"><table class="table' + image.html_layout +' fit' + '"><script>jQuery(".fit").fitText(1.9);</script><tr><td id="messagePrev"></td></tr></table><table class="name_table' + image.html_layout +' fit2' + '"><script>jQuery(".fit2").fitText(1.2);</script><tr><td id="namePrev"></td></tr></table>');
+           		// URLからパラメータを取得
+			var queryStrings = getQueryString();
+
+			// message_bodyがあれば本文を表示する
+			if(queryStrings['message_body']) {
+				$("#messagePrev").append(queryStrings['message_body']);
+			}
+			// nameがあれば名前を表示する
+			if(queryStrings['name']) {
+				$("#namePrev").append(queryStrings['name']);
+			}
         },
         // 通信失敗時の処理
         error: function(xhr, textStatus, error) {
