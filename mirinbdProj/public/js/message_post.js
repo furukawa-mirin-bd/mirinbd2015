@@ -44,6 +44,7 @@ var swiperInitialize = function() {
         prevButton: '.swiper-button-prev',
         //Your options here:
         mode:'horizontal',
+        initialSlide: 1,
         loop: true
         //etc..
     });  

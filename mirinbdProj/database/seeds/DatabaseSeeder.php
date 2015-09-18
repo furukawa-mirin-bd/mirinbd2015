@@ -26,9 +26,12 @@ class MsimagesTableSeeder extends Seeder
         DB::table('msimages')->delete();
  
         DB::table('msimages')->insert([
-          ['url' => './img/samplecard01.png'],
-          ['url' => './img/samplecard01_2.png'],
-          ['url' => './img/samplecard01_3.png']
+          ['url' => './img/card01.png',
+           'html_layout' => ''],
+          ['url' => './img/card02.png',
+           'html_layout' => ''],
+          ['url' => './img/card03.png',
+           'html_layout' => '']
         ]);
     }
  
