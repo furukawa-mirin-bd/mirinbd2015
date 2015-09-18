@@ -136,6 +136,7 @@ header {
 .table {
 	position: absolute ;
 	width: 60% ;
+	text-align: left ;
 	table-layout : fixed ;
 	z-index: 9999 ;
 	top : 17% ;
@@ -156,6 +157,7 @@ header {
 .table02 {
 	position: absolute ;
 	width: 60% ;
+	text-align: left ;
 	table-layout : fixed ;
 	z-index: 9999 ;
 	top : 20% ;
