@@ -223,6 +223,13 @@ textarea {
 	font-size : 15px ;
 }
 
+#errorList {
+	font-size: 10px ;
+	list-style: none ;
+	color: yellow ;
+	margin-top : 5px ;
+}
+
 /*年表用------------------------------------*/
 
 .boxbottom p {
