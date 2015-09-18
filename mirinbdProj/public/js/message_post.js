@@ -123,7 +123,7 @@ var sendMessage = function() {
         // 通信失敗時の処理
         error: function(xhr, textStatus, error) {
  	        // 読み込み失敗のステータス表示
- 	        alert("miss!");
+ 	        alert("投稿に失敗しました!");
         }
     });
 }
@@ -153,19 +153,19 @@ var messageValidate = function() {
 			},
 			twitterid : {
 				required: false,
-      			maxlength: 15
+      			maxlength: 10
 			}
 		},
 		messages : {
 			postname : {
 				required: "名前が空白での投稿はできません。",
       			minlength: "名前が空白での投稿はできません。",
-      			maxlength: "名前は20文字以内で入力してください。"
+      			maxlength: "名前は10文字以内で入力してください。"
 			},
 			messageBody : {
 				required: "メッセージ内容が空白での投稿はできません。",
 				minlength: "メッセージ内容が空白での投稿はできません。",
-      			maxlength: "メッセージは150文字以内で入力してください。"
+      			maxlength: "メッセージは108文字以内で入力してください。"
 			},
 			twitterid : {
 				maxlength: "TwitterIDは15文字以内で入力してください。"
@@ -232,12 +232,12 @@ var getMsimage = function(msimage_id) {
         // 通信成功時の処理
         success: function(image, dataType) {
             // 取得したパラメータに従い画像を表示する
-           	$(".gallery-cell").append('<img style="width:70%;" src="' + image.url + '">');
+           	$(".gallery-cell").append('<img style="width:90%;" src="' + image.url + '"><table class="table' + image.html_layout +' fit' + '"><script>jQuery(".fit").fitText(1.9);</script><tr><td>テストテストテストテストテテストテストテストテストてすとてすとてすとてすとてすとてすとてすとてすとストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテステ</td></tr></table><table class="name_table' + image.html_layout +' fit2' + '"><script>jQuery(".fit2").fitText(1.2);</script><tr><td>名前入ります。名前入</td></tr></table>');
         },
         // 通信失敗時の処理
         error: function(xhr, textStatus, error) {
  	        // 読み込み失敗のステータス表示
- 	        alert("miss!");
+ 	        alert("読み込みに失敗しました!");
         }
     });
 };

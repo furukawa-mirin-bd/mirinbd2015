@@ -138,7 +138,7 @@ header {
 	width: 60% ;
 	table-layout : fixed ;
 	z-index: 9999 ;
-	top : 32% ;
+	top : 17% ;
 	left : 10% ;
 	font-size : 0.3rem ;
 }
@@ -149,8 +149,8 @@ header {
 	text-align: left ;
 	table-layout : fixed ;
 	z-index: 9999 ;
-	top : 78% ;
-	left : 40% ;
+	top : 79% ;
+	left : 25% ;
 }
 
 .table02 {
@@ -158,8 +158,8 @@ header {
 	width: 60% ;
 	table-layout : fixed ;
 	z-index: 9999 ;
-	top : 32% ;
-	left : 10% ;
+	top : 20% ;
+	left : 32% ;
 	font-size : 0.3rem ;
 }
 
@@ -169,8 +169,8 @@ header {
 	text-align: left ;
 	table-layout : fixed ;
 	z-index: 9999 ;
-	top : 78% ;
-	left : 40% ;
+	top : 85% ;
+	left : 54% ;
 }
 
 .table03 {
@@ -178,8 +178,8 @@ header {
 	width: 60% ;
 	table-layout : fixed ;
 	z-index: 9999 ;
-	top : 32% ;
-	left : 10% ;
+	top : 24% ;
+	left : 32% ;
 	font-size : 0.3rem ;
 }
 
@@ -189,8 +189,8 @@ header {
 	text-align: left ;
 	table-layout : fixed ;
 	z-index: 9999 ;
-	top : 78% ;
-	left : 40% ;
+	top : 82% ;
+	left : 65% ;
 }
 
 .input {
