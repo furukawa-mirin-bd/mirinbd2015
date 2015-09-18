@@ -360,3 +360,25 @@ font-weight: bold ;
 .hbtn {
 	margin-top : 80px ;
 }
+
+/*secret------------------------------------*/
+
+#miri01 {
+	margin: 0 auto ;
+	text-align: center;
+	width:50%;
+	height :400px ;
+	background:url('../img/secret01.jpg') ;
+	background-size : 100% ;
+	background-repeat: no-repeat ;
+}
+
+#miri02 {
+	margin: 0 auto ;
+	text-align: center;
+	width:50%;
+	height :400px ;
+	background:url('../img/secret02.jpg') ;
+	background-size : 100% ;
+	background-repeat: no-repeat ;
+}
