@@ -303,6 +303,18 @@ color : #fff ;
 font-weight: bold ;
 }
 
+.pagefirst a{
+	display: block;
+	height: 100% ;
+	width: 100%;
+}
+
+.pagelast a{
+	display: block;
+	height: 100% ;
+	width: 100%;
+}
+
 /*comingsoon------------------------------------*/
 #yado {
 	margin : 0 auto ;
