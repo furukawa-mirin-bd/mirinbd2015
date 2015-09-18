@@ -159,7 +159,7 @@ var messageValidate = function() {
 			},
 			twitterid : {
 				required: false,
-      			maxlength: 10
+      			maxlength: 15
 			}
 		},
 		messages : {
