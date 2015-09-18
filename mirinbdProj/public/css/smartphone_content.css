@@ -370,6 +370,23 @@ color : #fff ;
 font-weight: bold ;
 }
 
+.btn3 {
+clear: both ;
+font-size : 1em ;
+display: block;
+line-height : 50px ;
+text-align : center ;
+width : 70% ;
+margin: 0 auto;
+margin-top : 20px ;
+margin-bottom: 10px ;
+background : #ff1414 ;
+border-radius:5px;
+box-shadow:0 5px #a30d0d;
+color : #fff ;
+font-weight: bold ;
+}
+
 .btn a{
 	display: block;
 	height: 100% ;
@@ -383,6 +400,12 @@ font-weight: bold ;
 }
 
 .btn2 a{
+	display: block;
+	height: 100% ;
+	width: 100%;
+}
+
+.btn3 a{
 	display: block;
 	height: 100% ;
 	width: 100%;
