@@ -35,20 +35,26 @@
 			<h2 class="content_name">INPUT MESSEGE </h2>
 			<p class="content_cap">カードに入れるメッセージを入力してください。</p>
 		</div>
-		<div id="gallery">
-			<div class="gallery-cell"></div>
-		</div>
-		<div class="input">
-			<div class="midashi"><h3>メッセージを入力してください。</h3></div>
-			<form id="messageInput">
-				<textarea type="text" class="massage" id="messageBody" name="messageBody"></textarea>
-		</div>
-		<div class="input">
-			<div class="midashi"><h3>名前を入力してください。</h3></div>
-			<input type="text" class="username" id="name" name="postname">
-			</form>
-		</div>
-		<div class="input" id="errorList"></div>
-		<div class="btn"><a href='javascript:void(0)' onclick="selectNameAndMessage('./card03.html')">このメッセージにする</a></div>
+		<div id="section_wrap">
+			<div id="gallery">
+				<div class="gallery-cell"></div>
+			</div>
+			<div class="input">
+				<div class="midashi"><h3>メッセージを入力してください。(必須)</h3></div>
+				<form id="messageInput">
+					<textarea type="text" class="massage" id="messageBody" name="messageBody"></textarea>
+			</div>
+			<div class="input">
+				<div class="midashi"><h3>名前を入力してください。(必須)</h3></div>
+				<input type="text" class="username" id="name" name="postname">
+			</div>
+			<div class="input">
+				<div class="midashi"><h3>TwitterIDを入力してください。(任意)</h3></div>
+				<input type="text" class="username" id="twitterid" name="twitterid">
+				</form>
+			</div>
+			<div class="input" id="errorList"></div>
+			<div class="btn"><a href='javascript:void(0)' onclick="selectNameAndMessage('./card03.html')">このメッセージにする</a></div>
+			</div>
 	</div>
 </body>

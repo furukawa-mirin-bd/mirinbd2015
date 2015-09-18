@@ -73,9 +73,11 @@ var selectNameAndMessage = function(linkUrl) {
 		var messageBody = $('#messageBody').val();
 		// メッセージ内容を取得する
 		var name = $('#name').val();
+		// twitteridを取得する
+		var twitterid = $('#twitterid').val();
 
 		// 名前とメッセージ内容を結合する
-		var param = decodeURIComponent(query) + "&message_body=" + messageBody + "&name=" + name;
+		var param = decodeURIComponent(query) + "&message_body=" + messageBody + "&name=" + name + "&twitterid=" + twitterid;
 		// URLの末尾に選択した画像のパラメータを付与してリンク遷移
 		location.href = linkUrl + "?" + encodeURIComponent(param);		
 	}
@@ -142,24 +144,31 @@ var messageValidate = function() {
 			postname : {
 				required: true,
       			minlength: 1,
-      			maxlength: 30
+      			maxlength: 20
 			},
 			messageBody : {
 				required: true,
       			minlength: 1,
       			maxlength: 150
+			},
+			twitterid : {
+				required: false,
+      			maxlength: 15
 			}
 		},
 		messages : {
 			postname : {
 				required: "名前が空白での投稿はできません。",
       			minlength: "名前が空白での投稿はできません。",
-      			maxlength: "名前は30文字以内で入力してください。"
+      			maxlength: "名前は20文字以内で入力してください。"
 			},
 			messageBody : {
 				required: "メッセージ内容が空白での投稿はできません。",
 				minlength: "メッセージ内容が空白での投稿はできません。",
       			maxlength: "メッセージは150文字以内で入力してください。"
+			},
+			twitterid : {
+				maxlength: "TwitterIDは15文字以内で入力してください。"
 			}
 		},
 		errorClass: "msgError",

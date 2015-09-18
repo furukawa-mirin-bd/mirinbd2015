@@ -59,6 +59,7 @@ class MessageController extends Controller {
 		$message->name = $messageData["name"];
 		$message->message_body = $messageData["message_body"];
 		$message->msimage_id = $messageData["msimage_id"];
+		$message->twitter_id = $messageData["twitterid"];
 
 		$message->save();
 
