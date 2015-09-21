@@ -323,6 +323,10 @@ font-weight: bold ;
 	width: 100%;
 }
 
+.yellow li{
+	color: yellow ;
+}
+
 /*comingsoon------------------------------------*/
 #yado {
 	margin : 0 auto ;
