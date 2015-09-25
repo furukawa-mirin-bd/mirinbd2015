@@ -492,3 +492,15 @@ font-weight: bold ;
 	font-weight: bold ;
 	line-height: 10px ;
 }
+
+/*gallery------------------------------------*/
+.gallery {
+	margin: 0 auto ;
+	text-align: center ;
+}
+
+.gallery img{
+	margin-right: 1%;
+	margin-top : 5px ;
+	box-shadow: 2px 2px 3px black ;
+}
