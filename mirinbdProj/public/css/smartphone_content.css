@@ -335,7 +335,7 @@ font-size : 1em ;
 display: block;
 line-height : 50px ;
 text-align : center ;
-width : 70% ;
+width : 80% ;
 margin: 0 auto;
 margin-top : 20px ;
 margin-bottom: 20px ;
@@ -503,4 +503,13 @@ font-weight: bold ;
 	margin-right: 1%;
 	margin-top : 5px ;
 	box-shadow: 2px 2px 3px black ;
+}
+
+.clear {
+	clear: both ;
+}
+
+#caution {
+	font-size: 12px; 
+	padding-bottom: 50px ;
 }

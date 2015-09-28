@@ -505,3 +505,11 @@ font-weight: bold ;
 	margin-top : 5px ;
 	box-shadow: 2px 2px 3px black ;
 }
+
+.clear {
+	clear: both ;
+}
+
+#caution {
+	font-size: 12px; 
+}
